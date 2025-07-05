@@ -313,7 +313,7 @@ if train:
 
         #loss = re_loss + kl_loss + consis_loss + re_feat_loss
 
-        loss = consis_loss#+ kl_loss
+        loss = consis_loss+ kl_loss
        # z=z.detach()#.requires_grad = False
         print("loss",loss)
         optimizer_ge.zero_grad()
